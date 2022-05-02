@@ -14,6 +14,14 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'perda-peso',
+    loadChildren: () => import('./perda-peso/perda-peso.module').then( m => m.PerdaPesoPageModule)
+  },
+  {
+    path: 'mortal-kombat',
+    loadChildren: () => import('./filmes/mortal-kombat/mortal-kombat.module').then( m => m.MortalKombatPageModule)
+  },
  
 ];
 @NgModule({
